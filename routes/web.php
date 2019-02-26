@@ -24,3 +24,6 @@ Route::get('/users/{id}/{name}', function () {
 
 Route::get('/about', "PagesController@about");
 Route::get('/services', "PagesController@services");
+
+//Create all the routes that we need
+Route::resource('posts', 'PostsController');
